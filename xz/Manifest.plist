@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>assets</key>
+			<array>
+				<dict>
+					<key>kind</key>
+					<string>software-package</string>
+					<key>url</key>
+					<string>https://gzc-download.weiyun.com/ftn_handler/3d20cc960b8213124bf1ab55b0583f57ba73c09c3746129e6641066a680e889af264fd5a8a7f5a2f157ad91b1d6fb1467778f90721d233d965da22efc7b0c1e7/%E6%B8%B8%E8%9A%8A%E4%BC%A0%E5%A5%87.ipa?fname=%E6%B8%B8%E8%9A%8A%E4%BC%A0%E5%A5%87.ipa&from=30113&version=3.3.3.3</string>
+				</dict>
+				<dict>
+					<key>kind</key>
+					<string>display-image</string>
+					<key>url</key>
+					<string>http://lwywcq.gitee.io/wap/xz/57.png</string>
+				</dict>
+				<dict>
+					<key>kind</key>
+					<string>full-size-image</string>
+					<key>url</key>
+					<string>http://lwywcq.gitee.io/wap/xz/512.png</string>
+				</dict>
+			</array>
+			<key>metadata</key>
+			<dict>
+				<key>bundle-identifier</key>
+				<string>com.gowlom2.legend</string>
+				<key>bundle-version</key>
+				<string>1.0</string>
+				<key>kind</key>
+				<string>software</string>
+				<key>title</key>
+				<string>游蚊传奇</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
