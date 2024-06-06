@@ -1,0 +1,38 @@
+﻿@charset "utf-8";
+blockquote,body,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,img,input,li,ol,p,pre,textarea,ul{padding:0;margin:0;font-weight:400}
+img{margin:0;padding:0}
+table,td,th,tr{font-size: 16px;}
+li{list-style-type:none;list-style:none}
+ol,ul{list-style:none}
+h1,h2,h3,h4,h5,h6,p{font-weight:400;font-style:normal;font-size:18px}
+address,cite,code,em,th{font-weight:400;font-style:normal}
+input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:none;-moz-appearance:none;appearance:none}
+html{background-color: #b5b5b5;}
+body{width: 100%;627109526min-height:1024px;margin:0 auto;padding:0;font-family:"sans-serif","Microsoft YaHei","微软雅黑",Verdana,"宋体",Arial,helvetica,sans-serif;color:black;font-size:18px;background-color: white}
+a{text-decoration:none;blr:expression(this.onsk_banner=this.blur());color:#383838;outline-style:none}
+a:hover{text-decoration:none}
+a:sk_banner{-moz-outline-style:none}
+.active{border-bottom: 4px solid #749a82;}
+nav{width: 100%;627109526height: 100%; position: fixed; background:rgba(0,0,0,0.6); z-index:999; display:none;}
+.list{width:94%;margin:0px auto; position:relative;border-radius:10px;}
+.list .close{ position: absolute; right:25px;}
+
+.tops{width: 100%;627109526height:80px;position:fixed;bottom: 0px; z-index:99;background-color: #de2821}
+.tops .to{width:100%; height:100%;}
+.tops .to .to1{width:33%; height:100%;display: inline-block;vertical-align: top;text-align: center;}
+.tops .to .to3{width:33%; height:100%;display: inline-block;vertical-align: top;text-align: center;}
+.tops .to .to2{width:31%; height:100%;display: inline-block;vertical-align: top;text-align: center;}
+.tops .to .to1 img{width:190px; height:80px; }
+.tops .to .to2 img{width:190px; height:80px; }
+.tops .to .to3 img{width:190px; height:80px; }
+.clear{clear: both;}
+.join_1{width: 100%;height: auto;margin: 0 auto;color: black;text-align: center;margin-top: 0px;}
+.join_1 ul{width: 100%;text-align: center;margin-top:-5px;}
+.join_1 ul li {display: inline-block;vertical-align: top;}
+.join_1 ul li h2{font-size: 1.5em;font-weight: bold;}
+.join_1 ul li p{width: 96%;margin: 0 auto;line-height: 25px;font-size: 0.8em;letter-spacing: 1px;text-align: left;margin-top: 10px;text-indent: 2em;}
+
+
+.sinput{width: 90%;height: 50px;border: 1px solid #7d430f;margin:0 auto;display:block; padding-left: 6px;margin-top: 10px;font-size:24px;color:#999}
+.bount{width: 94%;height: 70px;background-color: #BF8A5B;transition:all 0.5s;-moz-transition:all 0.5s;-webkit-transition:all 0.5s;-o-transition:all 0.5s;color:white;font-size: 1em}
+.bount:hover{background-color: #d00d23;}

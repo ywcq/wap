@@ -1,0 +1,11 @@
+系统IOS14.0-15.6
+itms-services://?action=download-manifest&url=https://api.wnqapp.com/down/signdown/plist/arm64e.plist
+
+系统IOS15.0-15.6
+itms-services://?action=download-manifest&url=https://api.wnqapp.com/down/signdown/plist/arm64.plist
+
+系统IOS14.0-15.6
+itms-services://?action=download-manifest&url=https://esign.yyyue.xyz/yyy/api/esignapp/arm64e/install
+
+系统IOS15.0-15.6
+itms-services://?action=download-manifest&url=https://esign.yyyue.xyz/yyy/api/esignapp//arm64/install
