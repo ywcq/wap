@@ -1,0 +1,436 @@
+--配置方法请看，教程，不会就不要bb了
+local uiconfig = {
+	menu = {
+		btn = {			---设置需要折叠的图标，例如shop对应的rs/pic/console/panel_icons内的图标文件名字（不带png）最后一个}不带逗号
+			{
+			panel = "shop",
+			cmd = "@shangcheng",
+			level = 10
+			},
+			{				
+			panel = "chkCharge",
+			name = "充值",
+			level = 0
+			},
+			{
+			panel = "wx",
+			name = "微信",
+			level = 0
+			},
+			{
+			panel = "gongneng",
+			cmd = "@gongneng",
+			level = 20
+			},
+			{
+			panel = "huodong2",
+			cmd = "@huodong2",
+			level = 20
+			},
+			{
+			panel = "zizhu",
+			cmd = "@zizhu",
+			level = 20			
+			},
+			{
+			panel = "zhanma",
+			cmd = "@zhanmaxt",
+			level = 20			
+			},
+			{
+			panel = "introduce",
+			cmd = "@introduce",
+			level = 20			
+			},
+			{
+			panel = "xiaofeixie",
+			cmd = "@xiaofeixie",
+			level = 20			
+			}
+		}
+	},
+	oldmenu = {
+		btn = {			--设置右侧的菜单
+			{
+			panel = "equip",
+			name = "装备面板",
+			level = 0		--控制达到多少级开启，如果一直显示则改为0，会随着等级更新自动更新
+			},
+			{
+			panel = "bag",
+			name = "背包",
+			level = 0
+			},
+			{
+			panel = "skill",
+			name = "技能面板",
+			level = 0
+			},
+			{
+			panel = "group",
+			name = "组队",
+			level = 0
+			},
+			{
+			panel = "guild",
+			name = "行会",
+			level = 0
+			},
+			{
+			panel = "relation",
+			name = "好友",
+			level = 0
+			},
+			{
+			panel = "top",
+			name = "排行榜",
+			level = 0
+			},
+			{
+			panel = "deal",
+			name = "面对面",
+			level = 0
+			},
+			{
+			panel = "stall",
+			name = "摆摊",
+			level = 0
+			},
+			{
+			panel = "mail",
+			name = "邮箱",
+			level = 0
+			},
+			{
+			panel = "setting",
+			name = "内挂",
+			level = 0
+			},
+			{
+			panel = "shop",
+			name = "商城",
+			level = 0
+			}
+		}
+	},
+	equip = {
+		btn = {          --装备栏下方按键
+		
+		    {
+				rsc = "NewopUI",
+				imgidx = 415,
+				mynpc = "shengxiao",
+				disx = 225,
+				disy = 325	
+		    },	
+		
+			{
+				rsc = "NewopUI",
+				imgidx = 501,
+				cmd = "@zhuanj",
+				disx = 45,
+				disy = -32
+			},
+			{
+				rsc = "NewopUI",
+				imgidx = 504,
+				cmd = "@zhuans",
+				disx = 105,
+				disy = -32
+			},
+			{
+				rsc = "NewopUI",
+				imgidx = 507,
+				cmd = "@zhuanfz",
+				disx = 165,
+				disy = -32
+			},
+			{
+				rsc = "NewopUI",
+				imgidx = 510,
+				cmd = "@yhdz~1",
+				disx = 225,
+				disy = -32
+			},
+			{
+				rsc = "NewopUI",
+				imgidx = 603,
+				cmd = "@zhuangj",
+				disx = -12,
+				disy = 25
+			},
+			{
+				rsc = "NewopUI",
+				imgidx = 606,
+				cmd = "@zhuanyh",
+				disx = -12,
+				disy = -30
+			}
+			
+
+
+			
+		},
+		img = {          --装备栏下方图片
+		     {
+				rsc = "NewopUI",
+				imgidx = 434,
+				disx = 0,
+				disy = -67
+			}
+		},
+		page = {
+
+
+
+
+		},
+		newpos = {
+			leftlabel = {			--左侧分组
+				x = 7,
+				y = 412,
+				space = 86
+			},
+			rightlabel = {		--右侧分组
+				x = 362,
+				y = 412,
+				space = 86
+			},
+			exitbtn = {			--关闭按键
+				x = 0,			--距离最右边
+				y = 48			--距离最左边
+			},
+			name = {			--名字的高度
+				y = 34
+			},
+			guild = {			--行会名字的高度
+				y = 395
+			},
+			chan = {			--战队名字的高度
+				y = 360
+			},
+			scale = 1.2,		--装备页缩放比例
+			sexbg = {			--裸男、女的位置
+				x = 26,
+				y = 21
+			},
+			hair = {			--头发位置，自己p上吧
+				x = 139,
+				y = 240
+			},
+			state = {					--状态页
+				text1 = {				--左侧文本
+					x = 26,
+					y = 372,
+					space = 48			--间距
+				},
+				text2 = {				--右侧文本
+					x = 98,
+					y = 372,
+					space = 48
+				},
+				textbg = {				--每个数据的背景图
+					x = 90,
+					y = 372,
+					space = 48
+				}
+			},
+			attributes = {				--属性页
+				scroll = {				--滑块的配置
+					x = 28,				--横坐标
+					y = 34,				--纵坐标
+					width = 278,		--滑块宽度
+					height = 368		--滑块高度
+				},						--每项属性间距
+				h = 30,
+				text1 = {				--左侧文本
+					x = 16,
+					y = 368
+				},
+				text2 = {				--右侧文本
+					x = 133,
+					y = 368
+				},
+				rollbg = {				--右侧小滑块
+					x = 286,
+					y = 35,
+					width = 20,
+					height = 372
+				}
+			},
+			skill = {					--技能页
+				rect = {				--该页的范围
+					x = 0,
+					y = 0,
+					width = 310,
+					height = 368
+				},
+				scroll = {				--滑块
+					x = 12,
+					y = 34,
+					width = 310,
+					height = 368
+				},
+				rollbg = {				--右侧小滑块
+					x = 286,
+					y = 32,
+					width = 20,
+					height = 372
+				},
+				skillicons = {			--技能
+					x = 14,
+					y = 368,
+					space = 90			--每项技能间距
+				}
+			}
+		}
+	},
+	bag = {
+		btn = {
+			{
+				rsc = "NewopUI",
+				imgidx = 339,
+				cmd = "@olhuishou",
+				disx = 325,
+				disy = 78
+			},
+			{
+				rsc = "NewopUI",
+				imgidx = 336,
+				cmd = "@opcangku",
+				disx = 260,
+				disy = 78
+			}
+			
+		}
+	},
+	bottom = {
+		btn = {
+			{
+				rsc = "NewopUI",
+				imgidx = 379,
+				panel = "group",
+				disx = -195,
+				disy = 50
+			},
+			--{			--上边
+				--rsc = "NewopUI",
+				--imgidx = 373,
+				--panel = "equip",
+				--disx = 765,
+				--disy = 580
+			--},
+			--{
+				--rsc = "NewopUI",
+				--imgidx = 376,
+				--panel = "bag",
+				--disx = 855,
+				--disy = 580				
+			--},
+			--{	          --下边		
+				--rsc = "NewopUI",
+				--imgidx = 373,
+				--panel = "equip",
+				--disx = 480,
+				--disy = 168
+			--},
+			--{
+				--rsc = "NewopUI",
+				--imgidx = 376,
+				--panel = "bag",
+				--disx = 480,
+				--disy = 80				
+			--},
+			{
+				rsc = "NewopUI",
+				imgidx = 386,
+				panel = "stall",
+				disx = -20,
+				disy = 50				
+			},
+			{
+				rsc = "NewopUI",
+				imgidx = 5,
+				panel = "chat",
+				disx = 330,
+				disy = 110
+			},
+			{
+				rsc = "NewopUI",
+				imgidx = 24,
+				panel = "setting",
+				disx = 405,
+				disy = 88
+
+			}
+			
+		},
+		costum = {
+			anihp = {
+				beginidx = 396,
+				endidx = 409,
+				disx = -38,
+				disy = 25,
+				delay = 0.12
+			},
+			hp = {
+				fontsize = 14,
+				color = 250,
+				disx = -190,
+				disy = 2
+			},
+			mp = {
+				fontsize = 15,
+				color = 250,
+				disx = -85,
+				disy = 2
+			},
+			job = {
+				fontsize = 15,
+				color = 250,
+				disx = -660,
+				disy = 2
+			},
+			battery = {
+				disx = -590,
+				disy = 2
+			},
+			hpimg = {
+				disx = -38,
+				disy = 25
+			},
+			time = {
+				fontsize = 15,
+				color = 254,
+				disx = -767,
+				disy = 2
+			},
+			info = {
+				fontsize = 14,
+				color = 116,
+				disx = 160,
+				disy = 2
+			},
+			exp = {
+				disx = 408,
+				disy = 10,
+				scalex = 1,
+				scaley = 1.5
+			},
+			lv = {
+				fontsize = 15,
+				color = 250,
+				disx = 213,
+				disy = 2
+			},
+			exptext = {
+				type = 2,	--如果是1显示经验数及百分比，如果是2只显示百分比
+				fontsize = 16,
+				color = 255,
+				disx = 470,
+				disy = 13
+			}
+		}
+	}
+}
+return uiconfig

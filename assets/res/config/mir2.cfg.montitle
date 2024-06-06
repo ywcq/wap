@@ -1,0 +1,763 @@
+local montitle = {
+	['黑马'] = {
+		rsc = "title",		--素材文件夹
+		begin = 1,		--素材开始的第一个图片
+		frame = 1			--总共播放多少个图片
+	},
+['白羊座守护精灵'] = {
+rsc = "title",
+begin =1,
+frame = 1
+},
+['金牛座守护精灵'] = {
+rsc = "title",
+begin =1,
+frame = 1
+},
+['双子座守护精灵'] = {
+rsc = "title",
+begin =1,
+frame = 1
+},
+['巨蟹座守护精灵'] = {
+rsc = "title",
+begin =1,
+frame = 1
+},
+['狮子座守护精灵'] = {
+rsc = "title",
+begin =1,
+frame = 1
+},
+['处女座守护精灵'] = {
+rsc = "title",
+begin =1,
+frame = 1
+},
+['天秤座守护精灵'] = {
+rsc = "title",
+begin =1,
+frame = 1
+},
+['天蝎座守护精灵'] = {
+rsc = "title",
+begin =1,
+frame = 1
+},
+['射手座守护精灵'] = {
+rsc = "title",
+begin =1,
+frame = 1
+},
+['摩羯座守护精灵'] = {
+rsc = "title",
+begin =1,
+frame = 1
+},
+['水瓶座守护精灵'] = {
+rsc = "title",
+begin =1,
+frame = 1
+},
+['双鱼座守护精灵'] = {
+rsc = "title",
+begin =1,
+frame = 1
+},
+['沃玛教主'] = {
+rsc = "title",
+begin =1,
+frame = 1
+},
+['祖玛教主'] = {
+rsc = "title",
+begin =1,
+frame = 1
+},
+['虹魔教主'] = {
+rsc = "title",
+begin =1,
+frame = 1
+},
+['赤月恶魔'] = {
+rsc = "title",
+begin =1,
+frame = 1
+},
+['牛魔王'] = {
+rsc = "title",
+begin =1,
+frame = 1
+},
+['黄泉教主'] = {
+rsc = "title",
+begin =1,
+frame = 1
+},
+['圣地魔王'] = {
+rsc = "title",
+begin =1,
+frame = 1
+},
+['白沙瓦教皇'] = {
+rsc = "title",
+begin =1,
+frame = 1
+},
+['毒炎魔虫'] = {
+rsc = "title",
+begin =1,
+frame = 1
+},
+['帝王教主'] = {
+rsc = "title",
+begin =1,
+frame = 1
+},
+['黑魔教主'] = {
+rsc = "title",
+begin =1,
+frame = 1
+},
+['千年牛魔王7'] = {
+rsc = "title",
+begin =1,
+frame = 1
+},
+['轮回判官'] = {
+rsc = "title",
+begin =1,
+frame = 1
+},
+['武尊'] = {
+rsc = "title",
+begin =1,
+frame = 1
+},
+['黑山老妖'] = {
+rsc = "title",
+begin =1,
+frame = 1
+},
+['朱雀'] = {
+rsc = "title",
+begin =1,
+frame = 1
+},
+['白虎王'] = {
+rsc = "title",
+begin =1,
+frame = 1
+},
+['青龙王'] = {
+rsc = "title",
+begin =1,
+frame = 1
+},
+['玄武'] = {
+rsc = "title",
+begin =1,
+frame = 1
+},
+['邪恶女王'] = {
+rsc = "title",
+begin =1,
+frame = 1
+},
+['骑士教主'] = {
+rsc = "title",
+begin =1,
+frame = 1
+},
+['天使夜叉'] = {
+rsc = "title",
+begin =1,
+frame = 1
+},
+['八脚女娲'] = {
+rsc = "title",
+begin =2,
+frame = 1
+},
+['天使恶魔'] = {
+rsc = "title",
+begin =2,
+frame = 1
+},
+['雪原教主'] = {
+rsc = "title",
+begin =2,
+frame = 1
+},
+['巨翼狭'] = {
+rsc = "title",
+begin =2,
+frame = 1
+},
+['紫蛙王'] = {
+rsc = "title",
+begin =2,
+frame = 1
+},
+['天使护卫1'] = {
+rsc = "title",
+begin =2,
+frame = 1
+},
+['天使护卫'] = {
+rsc = "title",
+begin =2,
+frame = 1
+},
+['八脚龙'] = {
+rsc = "title",
+begin =2,
+frame = 1
+},
+['冰雪教主'] = {
+rsc = "title",
+begin =2,
+frame = 1
+},
+['吕布实体'] = {
+rsc = "title",
+begin =2,
+frame = 1
+},
+['传奇之王'] = {
+rsc = "title",
+begin =2,
+frame = 1
+},
+['传奇护法'] = {
+rsc = "title",
+begin =2,
+frame = 1
+},
+['传奇无敌'] = {
+rsc = "title",
+begin =2,
+frame = 1
+},
+['吕布虚体'] = {
+rsc = "title",
+begin =10,
+frame = 1
+},
+['天使琵琶妖'] = {
+rsc = "title",
+begin =10,
+frame = 1
+},
+['神箭教主'] = {
+rsc = "title",
+begin =10,
+frame = 1
+},
+['长戟教主'] = {
+rsc = "title",
+begin =10,
+frame = 1
+},
+['霸王教主'] = {
+rsc = "title",
+begin =10,
+frame = 1
+},
+['迷失不败神龙'] = {
+rsc = "title",
+begin =10,
+frame = 1
+},
+['魅影宝藏'] = {
+rsc = "title",
+begin =10,
+frame = 1
+},
+['冰龙神'] = {
+rsc = "title",
+begin =10,
+frame = 1
+},
+['金龙蛇王'] = {
+rsc = "title",
+begin =10,
+frame = 1
+},
+['天使剑客'] = {
+rsc = "title",
+begin =10,
+frame = 1
+},
+['迷失树妖'] = {
+rsc = "title",
+begin =10,
+frame = 1
+},
+['迷失大虫'] = {
+rsc = "title",
+begin =10,
+frame = 1
+},
+['迷失教主'] = {
+rsc = "title",
+begin =10,
+frame = 1
+},
+['列焰龙神44'] = {
+rsc = "title",
+begin =3,
+frame = 1
+},
+['列焰龙神'] = {
+rsc = "title",
+begin =3,
+frame = 1
+},
+['传奇刀王'] = {
+rsc = "title",
+begin =3,
+frame = 1
+},
+['北帝龟王44'] = {
+rsc = "title",
+begin =3,
+frame = 1
+},
+['北帝龟王'] = {
+rsc = "title",
+begin =3,
+frame = 1
+},
+['精灵蜘蛛'] = {
+rsc = "title",
+begin =3,
+frame = 1
+},
+['恶魔之王44'] = {
+rsc = "title",
+begin =3,
+frame = 1
+},
+['恶魔之王'] = {
+rsc = "title",
+begin =3,
+frame = 1
+},
+['K王'] = {
+rsc = "title",
+begin =3,
+frame = 1
+},
+['雪之教主'] = {
+rsc = "title",
+begin =3,
+frame = 1
+},
+['恶魔之怪兽'] = {
+rsc = "title",
+begin =3,
+frame = 1
+},
+['北帝之龟王'] = {
+rsc = "title",
+begin =3,
+frame = 1
+},
+['北帝龟王'] = {
+rsc = "title",
+begin =3,
+frame = 1
+},
+['魔龙之教主'] = {
+rsc = "title",
+begin =3,
+frame = 1
+},
+['千年牛魔修罗'] = {
+rsc = "title",
+begin =4,
+frame = 1
+},
+['天使之女王'] = {
+rsc = "title",
+begin =4,
+frame = 1
+},
+['赤月宝箱'] = {
+rsc = "title",
+begin =3,
+frame = 1
+},
+['命运宝箱'] = {
+rsc = "title",
+begin =4,
+frame = 1
+},
+['激情宝箱'] = {
+rsc = "title",
+begin =4,
+frame = 1
+},
+['皇陵宝箱'] = {
+rsc = "title",
+begin =4,
+frame = 1
+},
+['忍王'] = {
+rsc = "title",
+begin =4,
+frame = 1
+},
+['忍王护法'] = {
+rsc = "title",
+begin =4,
+frame = 1
+},
+['忍王替身'] = {
+rsc = "title",
+begin =4,
+frame = 1
+},
+['忍王先锋'] = {
+rsc = "title",
+begin =4,
+frame = 1
+},
+['绝世魔王'] = {
+rsc = "title",
+begin =12,
+frame = 1
+},
+['秒杀一切'] = {
+rsc = "title",
+begin =12,
+frame = 1
+},
+['千年妖藤王[精英]'] = {
+rsc = "title",
+begin =2,
+frame = 1
+},
+['吕布王[精英]'] = {
+rsc = "title",
+begin =2,
+frame = 1
+},
+['传奇之王[精英]'] = {
+rsc = "title",
+begin =2,
+frame = 1
+},
+['传奇护法[精英]'] = {
+rsc = "title",
+begin =2,
+frame = 1
+},
+['传奇无敌[精英]'] = {
+rsc = "title",
+begin =2,
+frame = 1
+},
+['紫宝石蜘蛛[精英]'] = {
+rsc = "title",
+begin =2,
+frame = 1
+},
+['天使之恶魔[精英]'] = {
+rsc = "title",
+begin =3,
+frame = 1
+},
+['天使之夜叉[精英]'] = {
+rsc = "title",
+begin =3,
+frame = 1
+},
+['天使之剑客[精英]'] = {
+rsc = "title",
+begin =3,
+frame = 1
+},
+['天使之琵琶妖[精英]'] = {
+rsc = "title",
+begin =3,
+frame = 1
+},
+['热血战将[精英]'] = {
+rsc = "title",
+begin =3,
+frame = 1
+},
+['热血传奇之王[精英]'] = {
+rsc = "title",
+begin =3,
+frame = 1
+},
+['热血传奇护法[精英]'] = {
+rsc = "title",
+begin =3,
+frame = 1
+},
+['热血传奇无敌[精英]'] = {
+rsc = "title",
+begin =3,
+frame = 1
+},
+['天使琵琶王[精英]'] = {
+rsc = "title",
+begin =8,
+frame = 1
+},
+['天使夜叉王[精英]'] = {
+rsc = "title",
+begin =8,
+frame = 1
+},
+['天使剑客王[精英]'] = {
+rsc = "title",
+begin =8,
+frame = 1
+},
+['天使恶魔王[精英]'] = {
+rsc = "title",
+begin =8,
+frame = 1
+},
+['精灵蜘蛛[精英]'] = {
+rsc = "title",
+begin =8,
+frame = 1
+},
+['北帝龟王[精英]'] = {
+rsc = "title",
+begin =8,
+frame = 1
+},
+['列焰龙神[精英]'] = {
+rsc = "title",
+begin =8,
+frame = 1
+},
+['恶魔之王[精英]'] = {
+rsc = "title",
+begin =8,
+frame = 1
+},
+['天使之女王[精英]'] = {
+rsc = "title",
+begin =8,
+frame = 1
+},
+['魔龙之教主[精英]'] = {
+rsc = "title",
+begin =8,
+frame = 1
+},
+['北帝之龟王[精英]'] = {
+rsc = "title",
+begin =8,
+frame = 1
+},
+['恶魔之怪兽[精英]'] = {
+rsc = "title",
+begin =8,
+frame = 1
+},
+['雪之教主[精英]'] = {
+rsc = "title",
+begin =8,
+frame = 1
+},
+['忍王先锋[精英]'] = {
+rsc = "title",
+begin =11,
+frame = 1
+},
+['忍王护法[精英]'] = {
+rsc = "title",
+begin =11,
+frame = 1
+},
+['忍王[精英]'] = {
+rsc = "title",
+begin =11,
+frame = 1
+},
+['绝世魔王[精英]'] = {
+rsc = "title",
+begin =12,
+frame = 1
+},
+['绝世仙尊[魔]'] = {
+rsc = "title",
+begin =11,
+frame = 1
+},
+['绝世神将[魔]'] = {
+rsc = "title",
+begin =11,
+frame = 1
+},
+['秒杀一切[精英]'] = {
+rsc = "title",
+begin =12,
+frame = 1
+},
+['蓝色妖姬[精英]'] = {
+rsc = "title",
+begin =11,
+frame = 1
+},
+['火焰魔王[精英]'] = {
+rsc = "title",
+begin =11,
+frame = 1
+},
+['深海领主[精英]'] = {
+rsc = "title",
+begin =11,
+frame = 1
+},
+['失落魔主[精英]'] = {
+rsc = "title",
+begin =11,
+frame = 1
+},
+['虎王(道)'] = {
+rsc = "title",
+begin =5,
+frame = 1
+},
+['龙神(战)'] = {
+rsc = "title",
+begin =5,
+frame = 1
+},
+['虎神(道)'] = {
+rsc = "title",
+begin =5,
+frame = 1
+},
+['上古狼(战)'] = {
+rsc = "title",
+begin =7,
+frame = 1
+},
+['上古豹(道)'] = {
+rsc = "title",
+begin =7,
+frame = 1
+},
+['上古龙(战)'] = {
+rsc = "title",
+begin =7,
+frame = 1
+},
+['上古狰(道)'] = {
+rsc = "title",
+begin =7,
+frame = 1
+},
+['虎神尊(道)'] = {
+rsc = "title",
+begin =5,
+frame = 1
+},
+['龙神尊(道)'] = {
+rsc = "title",
+begin =5,
+frame = 1
+},
+['夔神尊(道)'] = {
+rsc = "title",
+begin =5,
+frame = 1
+},
+['妖王(法)'] = {
+rsc = "title",
+begin =9,
+frame = 1
+},
+['烈焰(法)'] = {
+rsc = "title",
+begin =9,
+frame = 1
+},
+['圣剑(法)'] = {
+rsc = "title",
+begin =9,
+frame = 1
+},
+['夜叉(法)'] = {
+rsc = "title",
+begin =7,
+frame = 1
+},
+['剑客(法)'] = {
+rsc = "title",
+begin =7,
+frame = 1
+},
+['琵琶(法)'] = {
+rsc = "title",
+begin =7,
+frame = 1
+},
+['星座之神'] = {
+rsc = "title",
+begin =9,
+frame = 1
+},
+['傲视之神'] = {
+rsc = "title",
+begin =9,
+frame = 1
+},
+['游龙之神'] = {
+rsc = "title",
+begin =9,
+frame = 1
+},
+['东方之神'] = {
+rsc = "title",
+begin =9,
+frame = 1
+},
+['降龙之神'] = {
+rsc = "title",
+begin =9,
+frame = 1
+},
+['御风（卧龙）'] = {
+rsc = "title",
+begin =9,
+frame = 1
+},
+['风云（卧龙）'] = {
+rsc = "title",
+begin =9,
+frame = 1
+},
+['飞鸿（卧龙）'] = {
+rsc = "title",
+begin =9,
+frame = 1
+},
+['新月（卧龙）'] = {
+rsc = "title",
+begin =9,
+frame = 1
+},
+['青城（卧龙）'] = {
+rsc = "title",
+begin =9,
+frame = 1
+},
+['斩浪（卧龙）'] = {
+rsc = "title",
+begin =9,
+frame = 1
+}
+}
+return montitle

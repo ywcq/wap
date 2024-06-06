@@ -1,0 +1,246 @@
+--
+--仅用于参考学习，请勿用于商业用途，或者非法用途，否则出现任何后果与本人无关
+local yanshen =import("mir.def.jianwu") 
+local xiaolan = {
+		ip = "8.134.175.182",
+		port = tostring(8088),
+		space = 70,			--设置右上角折叠图标间距，默认70
+		
+		anifps = 0.12,		--设置全局动态内显帧率，默认0.12（每0.12秒播放一个png），数值越小播放越快，建议0.1-0.5之间
+		animap = 0.12,		--设置全局动态光柱帧率，默认0.12（每0.12秒播放一个png），数值越小播放越快，建议0.1-0.5之间
+		anihp = 0.12,		--设置血球帧率，默认0.12（每0.12秒播放一个png），数值越小播放越快，建议0.1-0.5之间
+		
+		banquan = "龙武游蚊传奇  长期一切靠打",		--设置底部授权信息
+		qqnum = "QQ客服:164398313",			--设置微信有礼qq号
+		qqqun = "QQ  群:859704091",			--设置微信有礼qq群号
+		qqlink ="http://wpa.qq.com/msgrd?v=3&uin=164398313&site=qq&menu=yes",					--设置一键qq链接，可百度“qq推广”进入申请推广链接
+		qqqunlink = "https://jq.qq.com/?_wv=1027&k=QcbDbgkT",				--一键加群链接，群信息右上角分享复制链接得到链接地址
+		wxnum = "微信客服:longwumir",					--微信有礼面板微信号
+		
+		fashionid = 20,				--自定义时装斗笠分界线，装备的outlook值大于这个数值为时装，小于这个数值为斗笠
+		
+		--gongsu = true,			--设置老虎攻速开关，true为打开，false为关闭
+		
+		mapmusic = {			--地图添加自定义背景音乐
+			["0"] = "login",		--地图id，后边是音乐
+			["1"] = "game_over2"
+		},
+		showlv = 1000,							--首冲自动弹出等级
+		lock = {
+			hero =cc.c3b(178, 34, 34),			--锁人字体颜色
+			custom = 2
+		},
+		newwidget = true,				--true开启新的布局，如果想用老布局，这个地方改成false,然后根据需要修改mir2.scenes.main.console.widget._def.lua文件里的default_old
+		chenghaohigh = 30,		--头顶上称号的高度
+		chenghaospace = 25,		--头顶两个称号之间的距离
+		namesize = 12,		--名字的大小
+		namecolor = cc.c3b(245,245,245), 		--默认玩家颜色
+		guildcolor = cc.c3b(0, 255, 255),  		--默认行会颜色
+		guildleft = '< ', 						--行会名称左侧标识
+		guildright = ' >',  					--行会名称右侧标识
+		notice = "<b><param size=25 textcolor=255|0|0  /><t \n游蚊传说黄金版(必看):\n /></b><b><param size=20 textcolor=255|222|173 /><t \n十年旧梦，重温昔日情怀，满腔热血，邀您续写当年传奇！ \n苹果-安卓-电脑，三端互通！100%还原！经典再现！\n独家全新版本｜特色功能｜装备保值｜一切靠打！\n元宝比例1:10，玩家交流QQ群:110311940\n每月稳定开放一个新区 首次攻占《沙巴克》奖励丰富，具体游戏查看体验！\n  /></b>",		--刚进游戏时候的公告，复制你原来的就行
+		relive = {				--设置复活按键，如果不想用复活请删除这一段
+			info = "请选择复活方式，目前不支持原地复活，土城复活消耗10W金币",		--复活信息框的信息
+			tucheng = "5",		--设置复活按钮显示，true为启用，false为关闭
+			yuandi = "6"		--开启原地复活
+			
+		},
+		chatbg = true,					--开启聊天框背景，true为开启，false为关闭
+		cangku = true,					--开启背包仓库，true为开启，false为关闭
+		quickcharge = false,				--使用极简的快充，true为开启，false为关闭，关闭则使用老款跳网页
+		attack = {
+			attack = 0.5,				--
+			player = 0.5,				--
+			mon = 0.5
+		},
+		equipcfg = {
+			shengwang = "声望",			---装备栏声望显示的名称
+			yuanbao = "元宝",			---装备栏元宝显示的名称
+			lingfu = "灵符"				---装备栏灵符显示的名称
+		},
+		infobar = {
+			gold = true,				--左上角显示金币，true为显示，false为不显示
+			yb = true,					--左上角显示元宝，true为显示，false为不显示
+			lingfu = false,				--左上角显示灵符，true为显示，false为不显示
+			syceeinfo = false,			--左上角显示声望，true为显示，false为不显示
+			
+		},
+		chat = {
+			fontbg = true				--开启聊天框字体带背景，true开，false关
+		},
+		autodun = false,					--其他职业开启魔法盾
+		miaoshu = 16,					--设置装备描述的文字大小
+		mianfu = true,					--开启道士免符跟粉的开关，true开，false关
+		shengscale = 1,				--设置声望显示比例，默认为1，0.1则为原声望的1/10，10则为原来10倍
+		autorat = true,					--传送boss后是否开启自动挂机
+		autoratdisy = 200,				--自动挂机在屏幕中间下面的位置
+		equipextra = {					--装备面板增加额外的分页，可以自由添加
+			
+		},
+		equipaddbtn = {					--添加装备页显示按钮，仅永久卡用户，如果不是永久卡，请自行删除
+
+		},
+		equipaddimg = {					--装备面板添加图片
+			
+		},
+		firstRecharge = {				--首冲现在同一改在这里配置，不用填写装备描述，光填名字就能用，原来的firstcharge.json将失效
+			one = "随机传送石/修复神水/金砖",			--首冲面板第一页的显示
+			two = "盟重传送石/修复神水/随身仓库(永久)",			--首冲面板第二页的显示
+			three = "金盒/除魔令/四倍经验(12时)",		--首冲面板第三页的显示
+			setnokill = "3"								--领取按钮对应的盘古函数，如果删除这一项则领取按钮不显示
+		},
+		autoUseShenshui = "您没有自动修复神水",			--内挂面板显示自动修复神水
+		autouse = {										--配置自动消耗物品
+			['200元人民币'] = true,						--自动消耗1000元宝这个物品
+			['100元人民币'] = true,
+			['50元人民币'] = true,
+			['20元人民币'] = true,
+			['10元人民币'] = true,
+			['5元人民币'] = true,
+			['2元人民币'] = true,
+			['1元人民币'] = true,
+			['1000万金币'] = true,
+			['500万金币'] = true,
+			['200万金币'] = true,
+			['100万金币'] = true,
+			['50万金币'] = true,
+			['20万金币'] = true,
+			['10万金币'] = true,
+			['5万金币'] = true,
+			['5千万经验卷'] = true,
+			['3千万经验卷'] = true,
+			['2千万经验卷'] = true,
+			['1千万经验卷'] = true,
+			['500万经验卷'] = true,
+			['300万经验卷'] = true,
+			['200万经验卷'] = true,
+			['100万经验卷'] = true,
+			['1000声望'] = true,
+			['500声望'] = true,
+			['200声望'] = true,
+			['100声望'] = true,
+			['50声望'] = true,
+			['20声望'] = true,
+			['10声望'] = true,
+			['5声望'] = true,
+			['2声望'] = true,
+			['1声望'] = true,
+			['500灵符'] = true,
+			['200灵符'] = true,
+			['100灵符'] = true,
+			['50灵符'] = true,
+			['20灵符'] = true,
+			['10灵符'] = true,
+			['5灵符'] = true,
+			['2灵符'] = true,
+			['1灵符'] = true,
+			['1000元宝'] = true,
+			['100元宝'] = true,
+			['50元宝'] = true,						--自动消耗1000元宝这个物品
+			['20元宝'] = true,
+			['10元宝'] = true,
+			['5元宝'] = true,						--自动消耗1000元宝这个物品
+			['2元宝'] = true,
+			['1元宝'] = true,
+            ['小飞鞋'] = true			
+		},
+		autoUseName = "自动吃元宝",						--内挂钟自动吃元宝的显示文本，可以根据你自己的需要改成你想显示的文本，如果删除这一项，则内挂不显示自动消耗物品
+		autocharge = "32",		--如果没有盘古vip或者不想自动，请删除这一项，充值自动到账调用的盘古setnokillmaplv函数，打开充值面板后2秒钟刷新一次,关闭面板停止刷新
+		singleMon = {				--内挂是否开启怪物简装，如果有这项则内挂显示怪物简装
+			race = 18,			--怪物简装对应的race,在monster.json查询你想设置的怪物race
+			appr = 27			--怪物简装对应的appr
+		},
+		singleNpc = {			--内挂是否显示npc简装，如果有这项则内挂显示npc简装
+			race = 50,			--npc的race
+			appr = 0			--npc的appr
+		},
+		singleChenghao = true,		--内挂显示称号简装，称号简装的意思是称号不是动画，仅展示第一张图片，优化性能
+		neiguabaohu = true,			--true开启内挂保护，false关闭内挂保护选项
+		betterauto = true,			--开启自动提醒更好的装备
+		bagbetter = true,			--背包显示属性更高的提示，稍微有个小bug，如果一件装备穿上了，另一件装备stmode相同，不会取消另一件装备的提升提醒，介意的话不要开启
+		namecolors = {249,216,250,252,253,255,152,149,70},		--多彩名字，给与称号带skc开启彩色名字,必须是9个
+		colorstime = 2,				--多彩名字间隔时间		
+		kcCmd = true,			--是否开启裤衩广域函数，类似于盘古的setnokillmaplv但是没有个数限制，具体会出教程
+		gmname = "张益达",		--设置gm名字，显示折叠菜单gm面板
+		map = {					--地图挂机及复活的一些设置
+			noauto = {			--禁止挂机的地图
+				['得到'] = true,
+				['铁匠铺'] = true
+			},
+			noalive = {			--禁止复活的地图
+				['土城123'] = true,
+				['铁匠铺'] = true
+			}
+		},
+		blackmap = {			--配置一直黑屏的地图，不管白天黑夜都是黑的
+			['室外桃园123'] = true,
+			['一线天123'] = true
+		},
+		daynightmap = {			--配置按照天气黑天的地图，奇数是黑天，偶数是白天
+			['土城123'] = true,
+			['沙巴克123'] = true
+		},
+		night = true,			--黑夜模式开启及关闭，false为关闭,不要删除上边的黑夜设置，如果不开启这里关闭就行
+		sameoutlook = {			--设置同一地图同一外显，暂时取消
+			['土城123'] = {		--土城有的时候无效，别的地图一般有效
+				dress = 3,
+				hair = 3,
+				weapon = 1
+			},
+			['新手地图123'] = {
+				dress = 3,
+				hair = 3,
+				weapon = 1
+			}
+		},
+		havetask = true,				--开启任务显示，关闭为false
+		lightequip = {
+			{							--这里配置跟蜡烛一样亮度的装备
+				"蜡烛",
+				"蜡烛",				--无需区分职业，例如金牛勋章（道），仅需要填写金牛勋章
+				"蜡烛"
+			},
+			{							--这里配置跟火把一样亮度的装备
+				"蜡烛",
+				"蜡烛",
+				"蜡烛"
+			}
+		},
+		chatbgcolor = cc.c4b(255, 255, 255, 255), --用于设置聊天框的背景颜色，最后一位为透明度，前边的请参照颜色对照，如果想透明，请把最后一位255改成0
+		bag = {					--背包显示的属性
+			gold = true,		--金币显示
+			yb = true,			--元宝显示
+			lingfu = false,		--灵符显示
+			sycee = true		--声望
+		},
+		showAbility = true,		--左上角显示攻魔道开关，只有总开关，没有分项开关，关闭攻魔道显示则改成false
+		safeMode = {			--开启反外挂模式
+			--maxLevel = 200000,		--大于该等级闪退
+			--maxDC = 100000000,		--大于该攻击闪退
+			--maxMC = 100000000,		--魔法
+			--maxSC = 100000000		--道术
+		},
+		diaoluoHight = 5,		--调整掉落框的位置，这个值为相对位置，如果感觉高了就减，低了就加
+		clickOpenPanel = true,	--设置点击聊天框弹出聊天窗口
+		showLevel = true,		--血条上方是否显示等级，如果显示改为true
+		jiaxing = 4,			--加星分割线，4个以上每4个一个实心，如果都像用实心，应该改为1就可以，我也没试	
+		openSkillcd = false,		--打开技能cd动画
+		skillCmd = true,			--打开技能触发
+		--chgNight = 3,			--每隔3小时切换一次白天黑夜，需在上面配置切换地图,已废弃，做不了
+		autoPick = true,			--拾取按键开启或者关闭
+		skillname = "逐日剑法",		--修改内挂中逐日剑法的名字
+		diaoluoColor={				--设置掉落的文字颜色
+			255,
+			116,
+			255,
+			58,
+			255,
+			154
+		},
+		shenmirenMap = {		--设置神秘人的地图，暂时没测试带有字母的地图，自行测试，地图的id不是名字
+            ['D5071~222'] = true,
+			['0139'] = true,
+	        ['0139~222'] = true,
+		}
+}
+return xiaolan

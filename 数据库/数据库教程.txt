@@ -1,0 +1,14 @@
+首先 这是免芒果用的。如果是芒果请使用我提供的另一套。
+
+连接你的数据库 查看你的账号库是不是 account 切记要一模一样哦。
+
+如果不是这个 果断删除 然后新建一个数据库名字叫 account
+然后导入account.sql
+
+然后在 D:\Mud2.0\logincenter\logincenter_win\config\application.lua
+
+第八行 修改为 m.database="account" 如果是这个就不需要改。
+
+记得把你的mysql密码也配置在这个文件里哦。
+
+
