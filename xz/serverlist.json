@@ -1,0 +1,22 @@
+{
+    "shopurl": "https://pay.1234500000.com/cz/10003vnIoVSLuIdC?gid=11529",
+    "notice": "<b><param size=25 textcolor=255|0|0  /><t \r\n                                    游蚊苍穹录\r\n /></b><b><param size=20 textcolor=255|222|173 /><t \r\n十年旧梦，重温昔日情怀，满腔热血，邀您续写当年传奇！\r\n 苹果-安卓-电脑，三端互通！100%还原！经典再现！\r\n独家全新版本｜特色功能｜装备保值｜一切靠打！\r\n 元宝比例1:10，玩家交流QQ群:859704091 \r\n每月稳定开放一个新区 首次攻占《沙巴克》奖励丰富，具体游戏查看体验！ \r\n /></b><b><param size=25 textcolor=120|210|0/><t \r\n 　 开区时间：2024年6月8号14：00\r\n 　  /></b>",
+    "verinfo": [{
+        "verid": "1.80",
+        "vername": "游蚊苍穹录",
+        "verindex": 1,
+        "clientver": 180
+    }],
+    "servers": [{
+        "verid": "1.80",
+        "serverinfo": "[区服]:斗破苍穹",
+        "zoneid": 1,
+        "zonename": "游蚊苍穹录",
+        "zoneip": "8.134.175.182:7000",
+        "area": 180,
+        "suggest": 1,
+        "ConfigName": "config.zip",
+        "ConfigVer": "202302510",
+        "heat": 2
+    }]
+}
